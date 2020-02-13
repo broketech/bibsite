@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Bring it Back!</title>
+  <meta name="description" content="Connecting social relationships in Hollywood through co-starring roles.">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3.hive.v0.min.js"></script>
+  <script> const bibapiUrl = 'http://localhost:3000/api/v1/bibapi/'</script>
+  <script src="./assets/js/webRequest.js"></script>
+  <script src="./assets/js/autofill.js"></script>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="full column" style="margin-top: 0%">
+        <form>
+          <div class="row">
+            <div class="six columns">
+              <label for="primaryContact">First actor/actress name</label>
+              <input onchange="autofillRequest('primaryContact')" class="u-full-width" type="text" placeholder="Enter actor/actress name" id="primaryContact">
+            </div>
+            <div class="six columns">
+              <label for="secondaryContact">Second actor/actress</label>
+              <input onchange="autofillRequest('secondaryContact')" class="u-full-width" type="text" placeholder="Enter actor/actress name" id="secondaryContact">
+            </div>
+          </div>
+        </form>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
