@@ -34,12 +34,12 @@
           <div class="row">
             <div class="six columns">
               <label for="primaryContact">First actor/actress name</label>
-              <input data-autocomplete data-autocomplete-source="primaryContact-datalist" oninput="autofillRequest('primaryContact')" class="u-full-width" type="text" placeholder="Enter actor/actress name" id="primaryContact">
+              <input autocomplete="off" list="primaryContact-datalist" oninput="autofillRequest('primaryContact')" class="u-full-width" type="search" placeholder="Enter actor/actress name" id="primaryContact">
               <datalist id="primaryContact-datalist"></datalist>
             </div>
             <div class="six columns">
               <label for="secondaryContact">Second actor/actress</label>
-              <input data-autocomplete data-autocomplete-source="secondaryContact-datalist" oninput="autofillRequest('secondaryContact')" class="u-full-width" type="text" placeholder="Enter actor/actress name" id="secondaryContact">
+              <input autocomplete="off" list="secondaryContact-datalist" oninput="autofillRequest('secondaryContact')" class="u-full-width" type="search" placeholder="Enter actor/actress name" id="secondaryContact">
               <datalist id="secondaryContact-datalist"></datalist>
             </div>
           </div>
